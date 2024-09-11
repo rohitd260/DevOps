@@ -1,0 +1,12 @@
+#!/bin/bash
+
+var1="rd"
+var2="cs student"
+var3="nashik"
+var4=$USER
+
+echo "My name is $var1"
+echo "I am a $var2"
+echo "My Hometown is $var3"
+echo "Current user $USER"
+echo "$USER"

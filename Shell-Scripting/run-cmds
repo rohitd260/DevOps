@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Current User : " & whoami
+echo
+echo "working dirctory : " & pwd
+echo
+echo "Hostname" & hostname
+echo
+echo "Files in working directory : " & ls -ltr
+echo

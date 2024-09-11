@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Hello,My Name is Rohit"
+echo "What is your name ??"
+read name
+echo "Welcome to Linux , $name"
+echo "Have fun with Linux!!"
