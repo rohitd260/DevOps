@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -e /home/$USER/file.txt ]
+then
+	echo "File exists"
+	cat file.txt
+else
+	echo "File not existed"
+	echo "File created and saved" >> /home/$USER/file.txt
+fi
+cat /home/$USER/file.txt

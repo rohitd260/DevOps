@@ -1,0 +1,9 @@
+#!/bin/bash
+
+count=100
+if [ $count -eq 100 ]
+then
+	echo "Number is equal to 100"
+else
+	echo "Number is not equal to 100"
+fi
