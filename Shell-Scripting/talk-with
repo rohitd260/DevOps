@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Specify the remote host you want to ping
+HOST="192.168.1.24"  # Replace with the target host
+
+# Specify the port where the remote host will listen for the message
+PORT=8080
+
+# Number of ping attempts
+COUNT=4
+
+# Ping the remote host and check if it was successful
+ping -c $COUNT $HOST > /dev/null 2>&1
+
+# Check the exit status of the ping command
+if [ $? -eq 0 ]; then
+  echo "Ping to $HOST was successful!"
+  
+  # Send "Hi" message to the remote host using netcat
+  echo "Hi" | nc $HOST $PORT
+  echo "Sent 'Hi' message to $HOST on port $PORT"
+else
+  echo "Ping to $HOST failed!"
+fi
+
