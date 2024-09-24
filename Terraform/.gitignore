@@ -1,0 +1,8 @@
+# Ignore the Keys folder
+Keys/
+
+# Ignore all .terraform and terraform.tfstate files
+*.tfstate
+.terraform/
+.terraform.lock.hcl
+
