@@ -5,4 +5,4 @@ Keys/
 *.tfstate
 .terraform/
 .terraform.lock.hcl
-
+*.tfstate.backup
